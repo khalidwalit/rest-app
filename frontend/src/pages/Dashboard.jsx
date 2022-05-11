@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom'
 import { useSelector, useDispatch } from 'react-redux'
 import GoalForm from '../components/GoalForm'
 import GoalItem from '../components/GoalItem'
+import Spinner from '../components/Spinner'
 import { getGoals, reset } from '../features/goals/goalSlice'
 
 function Dashboard() {
@@ -30,6 +31,10 @@ function Dashboard() {
     }
 
   }, [user, navigate, isError, message, dispatch])
+
+  if (isLoading) {
+    return <Spinner />
+  }
 
   return (
     <>
