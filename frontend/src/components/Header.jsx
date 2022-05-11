@@ -24,7 +24,7 @@ function Header() {
           </li>
           <li>
             <div className='logo'>
-                  <Link to=''>Uncle Romu</Link>
+                  <Link to='/romu'>Uncle Romu</Link>
               </div>
           </li>
         </ul>
