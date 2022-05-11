@@ -16,15 +16,18 @@ function Header() {
     }
   return (
     <header className='header'>
-      <ul>
-        <div className='logo'>
-              <Link to='/'>GoalSetter</Link>
-          </div>
-          <div className='logo'>
-              <Link to=''>Uncle Romu</Link>
-          </div>
-      </ul>
-        
+        <ul>
+          <li>
+            <div className='logo'>
+                  <Link to='/'>GoalSetter</Link>
+              </div>
+          </li>
+          <li>
+            <div className='logo'>
+                  <Link to=''>Uncle Romu</Link>
+              </div>
+          </li>
+        </ul>
         <ul>
         {user ? (
           <li>
