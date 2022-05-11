@@ -1,7 +1,7 @@
 {
   "name": "frontend",
   "version": "0.1.0",
-  "proxy": "http://localhost:8000",
+  "proxy": "http://api.hvrange.xyz:8000",
   "private": true,
   "dependencies": {
     "@reduxjs/toolkit": "^1.8.1",
@@ -23,7 +23,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "deploy-production": "react-scripts build && scp -r ./build/* root@157.245.51.23:/var/www/mern.hvrange.xyz/html"
+    "deploy-production": "react-scripts build && scp -r ./build/* root@139.59.245.96:/var/www/uiux.hvrange.xyz/html"
   },
   "eslintConfig": {
     "extends": [
