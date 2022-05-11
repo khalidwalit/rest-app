@@ -5,6 +5,7 @@ import GoalForm from '../components/GoalForm'
 import GoalItem from '../components/GoalItem'
 import Spinner from '../components/Spinner'
 import { getGoals, reset } from '../features/goals/goalSlice'
+import { toast } from 'react-toastify'
 
 function Dashboard() {
   const navigate = useNavigate()
@@ -16,9 +17,9 @@ function Dashboard() {
 
   useEffect(() => {
 
-    if (isError) {
-      console.log(message)
-    }
+    if(isError) {
+      toast.error(message)
+  }
 
     if (!user) {
       navigate('/login')
