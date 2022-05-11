@@ -19,6 +19,9 @@ function Header() {
         <div className='logo'>
             <Link to='/'>GoalSetter</Link>
         </div>
+        <div className='logo'>
+            <Link to=''>Uncle Romu</Link>
+        </div>
         <ul>
         {user ? (
           <li>
